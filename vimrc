@@ -51,7 +51,6 @@ set ruler
 
 " ---- Spacing ----
 " Set default Tabs 
-Set Proper Tabs
 set tabstop=4
 set shiftwidth=4
 set smarttab
