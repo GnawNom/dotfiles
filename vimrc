@@ -12,6 +12,8 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
 " Plugins
+" A E S T H E T I C
+Plugin 'flazz/vim-colorschemes'
 "  Utility
 Plugin 'scrooloose/nerdtree'
 " Git Support
@@ -36,7 +38,6 @@ filetype plugin indent on    " required
 "
 " ---- Vundle End ----
 
-syntax on
 set nowrap
 set encoding=utf8
 " enable ftplugin files, and language-dependent indenting
@@ -45,6 +46,7 @@ filetype plugin indent on
 """"""""""""""""""""""""""""""""""""""
 " Configuration Section
 """"""""""""""""""""""""""""""""""""""
+
 " Show linenumbers
 set number
 set ruler
@@ -58,3 +60,13 @@ set expandtab
 
 " Always display status line
 set laststatus=2
+
+" Set Colorscheme
+" The reason for this guard is that calling syntax enable multiple times, like
+" when sourcing your .vimrc repeatedly, it will clobber any color highlighting
+" you already have set up
+if !exists("g:syntax_on")
+    syntax enable
+endif
+set background=dark
+colorscheme monokain
