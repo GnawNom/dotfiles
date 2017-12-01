@@ -36,7 +36,6 @@ filetype plugin indent on    " required
 "
 " ---- Vundle End ----
 
-set nocompatible
 syntax on
 set nowrap
 set encoding=utf8
@@ -51,8 +50,12 @@ set number
 set ruler
 
 " ---- Spacing ----
-" by default, the indent is 2 spaces. 
-set shiftwidth=2
-set softtabstop=2
-set tabstop=2
+" Set default Tabs 
+Set Proper Tabs
+set tabstop=4
+set shiftwidth=4
+set smarttab
+set expandtab
 
+" Always display status line
+set laststatus=2
