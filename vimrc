@@ -16,10 +16,13 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'flazz/vim-colorschemes'
 "  Utility
 Plugin 'scrooloose/nerdtree'
+Plugin 'tpope/vim-surround'
 " Git Support
 Plugin 'tpope/vim-fugitive'
 " Jsonnet Support
 Plugin 'google/vim-jsonnet'
+" Autocomplete
+Plugin 'ervandew/supertab'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
