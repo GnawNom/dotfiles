@@ -18,7 +18,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(package-selected-packages (quote (use-package evil))))
+ '(package-selected-packages (quote (magit evil-surround use-package evil))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -26,6 +26,19 @@
  ;; If there is more than one, they won't work right.
  )
 
+;; The Evil stuff
 (use-package evil
   :ensure t)
+
+(use-package evil-surround
+  :ensure t
+  :config
+  (global-evil-surround-mode 1))
+
 (evil-mode t)
+;; End of Evil Stuff
+
+;; GIT
+(use-package magit
+  :ensure t)
+;;
