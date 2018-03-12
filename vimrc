@@ -85,4 +85,4 @@ nnoremap <C-L> <C-W><C-L>
 nnoremap <C-H> <C-W><C-H>
 
 " Alternate escape keys
-:imap fd <Esc>
+:imap jk <Esc>
